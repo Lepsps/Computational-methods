@@ -69,6 +69,7 @@ int count = std::count(str.begin(), str.end(), target);
 | Mode | Count | Time, s | Speedup | Efficiency |
 | :--- | :--- | :--- | :--- | :--- |
 | seq | 1 | 0.03544 | 1.00 | 100% |
+| mpi | 2 | 0.03658 | 0.97 | 48.5% |
 | mpi | 4 | 0.01490 | **2.38** | 59.5% |
 
 *   **Speedup (Ускорение):** $T_{seq} / T_{mpi}$
@@ -89,3 +90,6 @@ int count = std::count(str.begin(), str.end(), target);
 1.  Message Passing Interface (MPI) Forum. MPI: A Message-Passing Interface Standard.
 2.  Лекционные материалы курса "Параллельное программирование для кластерных систем".
 3.  Документация OpenMPI: [https://www.open-mpi.org/](https://www.open-mpi.org/)
+
+
+
